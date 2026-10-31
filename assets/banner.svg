@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="m4lka — motion engineering, ai research, writing">
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
+    .rec { animation: blink 1.2s steps(1) infinite; }
+    .head { animation: sweep 6s linear infinite; }
+    .key { animation: pulse 6s linear infinite; transform-box: fill-box; transform-origin: center; }
+    .k2 { animation-delay: 1.2s; } .k3 { animation-delay: 2.4s; } .k4 { animation-delay: 3.6s; } .k5 { animation-delay: 4.8s; }
+    .caret { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes sweep { from { transform: translateX(0); } to { transform: translateX(1080px); } }
+    @keyframes pulse { 0%, 6% { fill: #D97757; transform: scale(1.35); } 14%, 100% { fill: #3a3a40; transform: scale(1); } }
+  </style>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity=".035"/>
+    </pattern>
+    <radialGradient id="glow" cx="78%" cy="40%" r="55%">
+      <stop offset="0" stop-color="#D97757" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#D97757" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="curve" x1="0" x2="1">
+      <stop offset="0" stop-color="#D97757" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#D97757"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="380" rx="14" fill="#0d0d0f"/>
+  <rect width="1200" height="380" rx="14" fill="url(#grid)"/>
+  <rect width="1200" height="380" rx="14" fill="url(#glow)"/>
+
+  <!-- viewfinder corners -->
+  <g stroke="#ffffff" stroke-opacity=".28" stroke-width="2" fill="none">
+    <path d="M40 64V40H64"/><path d="M1136 40H1160V64"/>
+    <path d="M40 252V276H64"/><path d="M1136 276H1160V252"/>
+  </g>
+
+  <!-- top HUD -->
+  <g class="mono" font-size="14" fill="#8b8b93">
+    <circle class="rec" cx="80" cy="66" r="6" fill="#ff4d4d"/>
+    <text x="94" y="71" fill="#e6e6ea">REC</text>
+    <text x="150" y="71">SCENE 01 · TAKE 01</text>
+    <text x="1120" y="71" text-anchor="end">1920×1080 · 30 fps · cycles</text>
+  </g>
+
+  <!-- wordmark -->
+  <g class="mono">
+    <text x="78" y="188" font-size="104" font-weight="800" fill="#f2f2f4" letter-spacing="-3">m<tspan fill="#D97757">4</tspan>lka<tspan class="caret" fill="#D97757">_</tspan></text>
+    <text x="82" y="230" font-size="20" fill="#a9a9b2" letter-spacing="1">motion engineering · ai research · writing</text>
+  </g>
+
+  <!-- easing curve with a ball riding it -->
+  <g transform="translate(720 96)">
+    <path d="M0 140H360M0 0V140" stroke="#ffffff" stroke-opacity=".12"/>
+    <path id="ease" d="M0 140 C 150 140, 150 0, 360 0" fill="none" stroke="url(#curve)" stroke-width="3"/>
+    <path d="M0 140 L150 140 M360 0 L150 0" stroke="#D97757" stroke-opacity=".35" stroke-dasharray="4 5"/>
+    <circle cx="150" cy="140" r="5" fill="#0d0d0f" stroke="#D97757" stroke-width="2"/>
+    <circle cx="150" cy="0" r="5" fill="#0d0d0f" stroke="#D97757" stroke-width="2"/>
+    <circle r="9" fill="#D97757">
+      <animateMotion dur="3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.65 0 0.35 1" keyPoints="0;1">
+        <mpath href="#ease"/>
+      </animateMotion>
+    </circle>
+    <text class="mono" x="360" y="166" font-size="12" fill="#6f6f78" text-anchor="end">cubic-bezier(.65, 0, .35, 1)</text>
+  </g>
+
+  <!-- timeline -->
+  <g transform="translate(60 304)">
+    <rect width="1080" height="44" rx="6" fill="#151518" stroke="#26262b"/>
+    <g stroke="#ffffff" stroke-opacity=".14">
+      <path d="M0 0v8M90 0v5M180 0v8M270 0v5M360 0v8M450 0v5M540 0v8M630 0v5M720 0v8M810 0v5M900 0v8M990 0v5M1080 0v8"/>
+    </g>
+    <rect x="12" y="16" width="250" height="14" rx="3" fill="#D97757" fill-opacity=".22"/>
+    <rect x="276" y="16" width="380" height="14" rx="3" fill="#ffffff" fill-opacity=".08"/>
+    <rect x="670" y="16" width="398" height="14" rx="3" fill="#D97757" fill-opacity=".14"/>
+    <g fill="#3a3a40">
+      <g transform="rotate(45 16 23)"><rect class="key" x="10" y="17" width="12" height="12"/></g>
+      <g transform="rotate(45 232 23)"><rect class="key k2" x="226" y="17" width="12" height="12"/></g>
+      <g transform="rotate(45 448 23)"><rect class="key k3" x="442" y="17" width="12" height="12"/></g>
+      <g transform="rotate(45 664 23)"><rect class="key k4" x="658" y="17" width="12" height="12"/></g>
+      <g transform="rotate(45 880 23)"><rect class="key k5" x="874" y="17" width="12" height="12"/></g>
+    </g>
+    <g class="head">
+      <path d="M0 -10V54" stroke="#D97757" stroke-width="2"/>
+      <path d="M-7 -14H7L0 -6Z" fill="#D97757"/>
+    </g>
+  </g>
+</svg>
