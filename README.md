@@ -1,107 +1,66 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="m4lka — motion engineering · ai research · writing" width="100%" />
+  <img src="./assets/banner.svg" alt="m4lka — writer · ai researcher · dev" width="100%" />
 </div>
 
 <br />
 
 <div align="center">
   <a href="https://x.com/m4lkxx">
-    <img src="https://img.shields.io/badge/X-@m4lkxx-0d0d0f?style=for-the-badge&logo=x&logoColor=white" alt="X @m4lkxx" />
+    <img src="https://img.shields.io/badge/X-@m4lkxx-000000?style=for-the-badge&logo=x&logoColor=white" alt="X @m4lkxx" />
   </a>
   <a href="https://t.me/m4lka4">
-    <img src="https://img.shields.io/badge/Telegram-m4lka4-0d0d0f?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram m4lka4" />
+    <img src="https://img.shields.io/badge/Telegram-m4lka4-000000?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram m4lka4" />
   </a>
-  <img src="https://img.shields.io/badge/NOW-RENDERING-D97757?style=for-the-badge&labelColor=0d0d0f" alt="Now rendering" />
+  <img src="https://img.shields.io/badge/444-ONLINE-e8e8e8?style=for-the-badge&labelColor=000000" alt="444 online" />
 </div>
 
-<h3 align="center">i make films with code — and write about the agents that render them.</h3>
+<h3 align="center">writer · ai researcher · dev</h3>
 
 <p align="center">
-  <samp>motion engineering · claude opus 5.5 · three.js · blender cycles · ffmpeg · long-form on x</samp>
+  <samp>i run agents on real work, find where they break, and write down what fixed it.</samp>
 </p>
 
 ---
 
-## `01` &nbsp;logline
+## `01` &nbsp;whoami
 
-I'm **m4lka** — writer, AI researcher, dev.
+I'm **m4lka**.
 
-I build short character films and motion packs **without a timeline editor**. A model writes the scene, one clock drives picture and sound, and the frames come out of **three.js** or **Blender Cycles**, stitched with **ffmpeg**.
+I write long-form about AI agents, I take models apart to see how they actually behave, and I build the tools and setups that come out of that.
 
-Then I write about what broke: wrong brand color, a prop clipping through a body, a loop seam that jumps. The interesting part of AI video is not the prompt. It's the checks.
+Most of what I publish starts as a real project: a bot fleet that costs too much, an agent that loops forever, a film rendered entirely from code. I run it, break it, fix it — then turn the fix into something other people can copy.
 
-> The model writes the scene. The checks decide if it ships.
+> Hype is a demo. A setup you can reproduce is a contribution.
 
-## `02` &nbsp;reel
+## `02` &nbsp;lanes
 
-<div align="center">
-  <img src="./assets/reel.gif" alt="Clips from recent films: a 3D character scene, a text-animation pack and two motion-effect grids" width="100%" />
-</div>
-
-<p align="center"><sub>every frame above was rendered from code. no after effects, no keyframes dragged by hand.</sub></p>
-
-| Film | What it is |
+| Lane | What lives there |
 | :--- | :--- |
-| **sub-killer** | 3D room scene in Blender Cycles — a creative-tools bill counting down to $0 |
-| **text-12** | 12 text animations people sell as $49 packs, rebuilt one by one |
-| **effects-12** · **pt 2** | 24 motion effects that usually cost $500 each, as a single grid film |
+| **writing** | long-form X articles: one sentence per line, levels instead of essays, a "what breaks" at every step |
+| **ai research** | harnesses, agent loops, context and memory, cost, how models fail on real tasks |
+| **dev** | bots, CLI tools, skills and prompt packs, automation for the stuff I'd otherwise do by hand |
+| **motion** | short films and motion packs rendered from code — three.js, Blender, ffmpeg, one timeline |
 
-## `03` &nbsp;pipeline
+## `03` &nbsp;writing
+
+What I write about:
 
 ```text
-brief → beats → one timeline → render → contact sheet → probe → fix → encode → post
+agents      →  from babysitting one agent to running a fleet
+harnesses   →  loops, graphs, verification, when to let the model drive
+bots        →  Grok and Claude bots in production, and what they really cost
+models      →  Opus, Grok, GPT — where each one breaks, with receipts
+motion      →  making video with models, and the checks that catch their mistakes
 ```
-
-```text
-[ WRITE  ]  BRAND / FORMAT / BEATS / CAMERA / LOOK / ACTING / CHECKS
-[ RENDER ]  renderAt(t) in three.js  ·  Blender 5 Python + Cycles
-[ SOUND  ]  synthesized from the same timeline, so hits land on frames
-[ CHECK  ]  contact sheets, color probes, loop seams, frame bounds
-[ SHIP   ]  ffmpeg encode → 16:9 + square → X
-```
-
-## `04` &nbsp;what breaks
-
-The stuff an agent gets wrong on the first render, and the check that catches it:
-
-| Symptom | Check |
-| :--- | :--- |
-| brand orange reads peach after tone mapping | pixel probe against the hex |
-| a prop sits inside the character | contact check across every frame |
-| the character drifts out of frame | bounds check on the safe area |
-| the loop jumps at the seam | first-vs-last frame diff |
-| "looks fine" in one still, broken in motion | contact sheet of the whole timeline |
-
-## `05` &nbsp;stack
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=threejs,blender,py,js,ts,nodejs,html,css,bash,git&theme=dark" alt="three.js, Blender, Python, JavaScript, TypeScript, Node.js, HTML, CSS, Bash, Git" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Claude_Opus_5.5-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Opus 5.5" />
-  <img src="https://img.shields.io/badge/FFmpeg-0d0d0f?style=flat-square&logo=ffmpeg&logoColor=D97757" alt="FFmpeg" />
-  <img src="https://img.shields.io/badge/Cycles-0d0d0f?style=flat-square&logo=blender&logoColor=D97757" alt="Blender Cycles" />
-  <img src="https://img.shields.io/badge/WebGL-0d0d0f?style=flat-square&logo=webgl&logoColor=D97757" alt="WebGL" />
-  <img src="https://img.shields.io/badge/Whisper-0d0d0f?style=flat-square&logo=openai&logoColor=D97757" alt="Whisper" />
-</div>
-
-## `06` &nbsp;writing
-
-Long-form on X about agents, harnesses and making video with models — one sentence per line, levels instead of essays, and a "what breaks" at the end of each.
 
 <p>
-  <a href="https://x.com/m4lkxx/articles"><strong>→ read the articles</strong></a>
+  <a href="https://x.com/m4lkxx/articles"><strong>→ all articles on X</strong></a>
 </p>
 
-## `07` &nbsp;next up
+## `04` &nbsp;method
 
 ```text
-[ CUTTING   ]  the check scripts as a repo: probe · contact sheet · seam check
-[ WRITING   ]  a defect-first guide to motion with Opus 5.5
-[ RENDERING ]  more films, more packs, all from code
+pick a real problem → run the agent on it → log what breaks → fix → reproduce → publish
 ```
 
 <details>
@@ -109,21 +68,52 @@ Long-form on X about agents, harnesses and making video with models — one sent
   <br />
 
 ```text
-01. one clock drives picture and sound
-02. never trust a single still
-03. probe the color, don't eyeball it
-04. render, look at the contact sheet, then fix
-05. ship the film, write what broke
+01. no claim without a run behind it
+02. one screenshot is an anecdote, ten runs are a finding
+03. show the failure, not just the win
+04. if a reader can't reproduce it, it isn't finished
+05. ship it, then write what broke
 ```
 
 </details>
 
+## `05` &nbsp;stack
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Bash-000000?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash" />
+  <img src="https://img.shields.io/badge/three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white" alt="three.js" />
+  <img src="https://img.shields.io/badge/Blender-000000?style=for-the-badge&logo=blender&logoColor=white" alt="Blender" />
+  <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+</div>
+
+<br />
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Claude-000000?style=flat-square&logo=anthropic&logoColor=white" alt="Claude" />
+  <img src="https://img.shields.io/badge/Grok-000000?style=flat-square&logo=x&logoColor=white" alt="Grok" />
+  <img src="https://img.shields.io/badge/GPT_%2F_Codex-000000?style=flat-square&logo=openai&logoColor=white" alt="GPT and Codex" />
+  <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logoColor=white" alt="MCP" />
+  <img src="https://img.shields.io/badge/FFmpeg-000000?style=flat-square&logo=ffmpeg&logoColor=white" alt="FFmpeg" />
+  <img src="https://img.shields.io/badge/Whisper-000000?style=flat-square&logo=openai&logoColor=white" alt="Whisper" />
+</div>
+
+## `06` &nbsp;next up
+
+```text
+[ WRITING     ]  new long-form on agents and models — check X
+[ CUTTING     ]  my working scripts and checks, published as repos
+[ RESEARCHING ]  multi-agent setups, memory, verification, cost
+```
+
 ---
 
 <p align="center">
-  <samp>write the scene → render the frames → check every one → ship</samp>
+  <samp>run it → break it → fix it → write it</samp>
 </p>
 
 <p align="center">
-  <sub>independent work — not affiliated with Anthropic or any tool named above.</sub>
+  <sub>444 · independent work — not affiliated with Anthropic, xAI, OpenAI or any tool named above.</sub>
 </p>
